@@ -132,3 +132,4 @@ deploy/id_rsa
 *.retry
 *.key
 .idea/
+deploy/authorized_keys

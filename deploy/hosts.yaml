@@ -22,13 +22,12 @@ load_balancers:
 
 validators:
   hosts:
-    validator-1.test.net:
-    validator-2.test.net:
+    ec2-54-245-128-7.us-west-2.compute.amazonaws.com:
   vars:
     etc_dir: validator
     supervisord_conf_file: validator.conf
     # Uncomment below to specify a location other than the root device to store ledger data. One use case would be
     # for a higher bandwidth drive than the root device, which may be a network drive.
-    # local_disk: /dev/nvme1n1
+    local_disk: /dev/nvme1n1
     extra_packages:
       - nginx
